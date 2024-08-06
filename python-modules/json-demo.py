@@ -34,7 +34,7 @@ class UserRepository:
 
     def login(self, username, password):
         for user in self.users:
-            if user.username == username and user.password == password:
+            if user.username_input == username and user.password == password:
                 self.isLoggedIn = True
                 self.currentUser = user
                 print("Logging in...")
